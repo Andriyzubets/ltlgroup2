@@ -160,7 +160,7 @@ a {
 	transition: .3S;
 	width: 90%;
 }
-.header .main-menu li:first-child:before {
+.header .main-menu li.active:before {
 	content: "";
 	display: block;
 	position: relative;
@@ -218,7 +218,7 @@ align-self: flex-end;*/
 .main-header .right-bar {
 	height: 100vh;
 	width: calc(25% - 80px);
-	background: url(../img/l-letter-rev.png) no-repeat;
+	background: url(../img/l-letter.png) no-repeat;
 	background-size: 90%;
 	background-position-x: 50%;
 	background-position-y: 200%;
@@ -278,7 +278,7 @@ align-self: flex-end;*/
 	font-size: 20px;
 	text-align: center;
 	letter-spacing: 3px;
-	padding: 20px 0 0;
+	padding: 20px 0 50px;
 }
 .main-header .right-bar h2:after {
 	content: "";
@@ -303,7 +303,7 @@ align-self: flex-end;*/
 }
 .main-header .right-bar p {
 	font-size: 14px;
-	margin: 0 5px 0;
+	margin: 0 5px 0 60px;
 	transition: all .4s;
 }
 .main-header .left-bar-full{
@@ -364,7 +364,7 @@ align-self: flex-end;*/
 }
 .main-header .right-bar-full .close {
 	position: absolute;
-	right: 68vw;
+	right: 66vw;
 	top: 0;
 	height: 100vh;
 	width: 7vw;
@@ -671,9 +671,9 @@ h1 {
 /* decisions*/
 .decisions {
 	background: #fff;
-	padding-top: 70px;
+	/*padding-top: 70px;*/
 	position: relative;
-	border-bottom: .5px solid #ccc;
+	/*border-bottom: .5px solid #ccc;*/
 }
 .decisions .picture {
 	width: 50vw;
@@ -750,15 +750,16 @@ h1 {
 .main-faq	{
 	background: #f7f7f7d4;
 	padding-bottom: 1px;
+	padding-top: 30px;
 }
 .faqs{
 	width: 100%;
 	max-width: 1045px;
 	position: relative;
 	padding-top: 180px;
-	margin: 0px auto 100px;
+	margin: 0px auto 50px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	
 }
 
@@ -819,9 +820,9 @@ On click the images will be displayed at normal size to complete the effect
 	transform: translate(20%,0);
 }
 .faqs .id1 {
-	background: url(../img/person-test.png) 50% no-repeat;
-	-webkit-background-size: contain;
-	background-size: contain;
+	    background: url(../img/person-test-1.png) 170% no-repeat;
+    -webkit-background-size: contain;
+    background-size: 130%;
 }
 
 /* why */
@@ -936,9 +937,9 @@ On click the images will be displayed at normal size to complete the effect
 }
 .benefit .content h4 {
 	font-size: 14px;
-    font-weight: 700;
-    color: #ee4b41;
-    line-height: 2em;
+	font-weight: 700;
+	color: #ee4b41;
+	line-height: 2em;
 }
 .benefit .content> p {
 	font-size: 20px;
@@ -1141,4 +1142,69 @@ On click the images will be displayed at normal size to complete the effect
 	width: 100%;
 	height: 100px;
 	background: url(../img/logo.png) 50% no-repeat;
+}
+
+/******************************
+********** faq page ***********
+*******************************/
+.faq-content {
+	max-width: 1045px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 30px 0 50px;
+}
+.faq-content .item {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	border-left: 2px solid #474038;
+}
+.faq-content .item .sub-container {
+	width: 95%;
+}
+.faq-content .item .shown {
+	font-style: italic;
+	font-size: 14px;
+	margin: 0 0 30px;
+}
+.faq-content .item .faq-sub {
+	overflow: hidden;
+	transition: all .6s;
+	padding-left: 5%;
+	text-align: justify;
+}
+.faq-content .item > a {
+	text-decoration: none;
+	border: 2px solid #474038;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	font-size: 16px;
+	background: #fff;
+	transform: translate(-11.5px,6px);
+	position: relative;
+}
+.faq-content .item > a span {
+	position: absolute;
+	left: 2px;
+	top: -6px;
+	color: #ee4b41;
+	font-size: 25px;
+
+}
+.faq-content .item > a span:last-child {
+	left: 4px;
+	top: -10.5px;
+	font-size: 30px;
+}
+
+.faq-content .item h4 b {
+	font-weight: 700;
+}
+.faq-content .item h4 {
+	font-size: 12px;
+	margin: 0px 0 15px;
 }
