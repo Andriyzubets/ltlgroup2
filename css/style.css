@@ -1168,6 +1168,7 @@ On click the images will be displayed at normal size to complete the effect
 	font-style: italic;
 	font-size: 14px;
 	margin: 0 0 30px;
+	text-align: justify;
 }
 .faq-content .item .faq-sub {
 	overflow: hidden;
@@ -1206,4 +1207,133 @@ On click the images will be displayed at normal size to complete the effect
 .faq-content .item h4 {
 	font-size: 12px;
 	margin: 0px 0 15px;
+}
+
+/* GALLERY STYLE */
+.gallery-separator {
+	padding: 100px 0 0 0;
+}
+.btn {
+	border-radius: 0px;
+	border-color: rgba(255, 255, 255, 0.5);
+	transition: background-color 0.2s ease;
+	font-weight: 300;
+  }
+  .btn:hover {
+	border-color: rgba(255, 255, 255, 0.7);
+  }
+  .btn {
+	border-radius: 0px;
+  }
+  .btn-default {
+	background-color: rgba(0, 0, 0, 0.043);
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	border-radius: 0px;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.05) inset;
+	margin: 0;
+	padding: 5px;
+  }
+.portfolio-item h3 {
+	color: #ffffff;
+	margin: 0;
+	padding: 0px 0px 15px;
+	font-size: 22px;
+	font-weight: 400;
+	text-transform: uppercase;
+	line-height: 1em;
+  }
+  ul.portfolio li a,
+  ul.grid li:first-child a {
+	padding: 0 !important;
+	margin: 0 !important;
+  }
+  .portfolio-filter {
+	margin: 0;
+	padding: 0px;
+	text-align: center;
+  }
+  .portfolio-filter li {
+	list-style: none;
+	display: inline-block;
+  }
+  .portfolio-filter-label {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 10px;
+	padding: 11px 12px;
+  }
+/* END GALLERY STYLE */
+.complex-page .item:after {
+	width: 100%;
+}
+.complex-page .wrap {
+	width: 100%!important;
+	max-width: 1045px;
+	height: auto!important;
+}
+.complex-page .item {
+	position: relative!important;
+	left: 0!important;
+	top: 0!important;
+}
+.complex-page .portfolio-item h3 {
+	padding: 0 0 3px;
+}
+
+  /* BLOG STYLE */
+.complex-blog .img-bg {
+	position: relative;
+	width: calc(100% - 80px);
+	height: 400px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.complex-blog .rotate-text {
+	position: absolute;
+	text-transform: uppercase;
+	transform: rotate(270deg);
+	left: -120px;
+	top: 160px;
+	width: 100%;
+	text-align: right;
+}
+/* .complex-blog .little-arrow:before {
+	content: "\e901";
+} */
+.complex-blog .little-arrow::after {
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    left: -15px; bottom: -32px; /* Положение треугольника */
+    border: 10px solid transparent; /* Прозрачные границы */
+    border-top: 10px solid #000; /* Добавляем треугольник */
+   }
+
+.complex-blog .item {
+	height: auto;
+	margin-bottom: 100px;
+}
+.complex-blog .item:after {
+	visibility: hidden;
+}
+.complex-blog .little-arrow {
+	position: absolute;
+	left: -10px;
+	top: 10px;
+}
+.complex-blog .info-text {
+	position: absolute;
+	left: 25%;
+	top: 95%;
+	width: calc(100% - 140px);
+	text-align: left;
+}
+.complex-blog .info-text span:nth-child(2n) {
+	font-size: 22px;
+	color: #000;
+	width: calc(100% - 40px);
+	font-weight: bold;
+	line-height: 34px;
+}
+.cbImg {
+	height: 100%;
 }
