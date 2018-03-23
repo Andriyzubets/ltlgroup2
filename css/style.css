@@ -1236,6 +1236,7 @@ On click the images will be displayed at normal size to complete the effect
 
 .gallery-separator {
 	padding: 100px 0 0 0;
+	background: none;
 }
 .btn {
 	border-radius: 0px;
@@ -1430,11 +1431,11 @@ ul.grid li:first-child a {
 
 }
 .about-contacts .right .line {
-	width: 1px;
-	background: #ee4b41;
-	position: absolute;
-	left: -1px;
-	transition: height .4s linear;
+	width: 2px;
+    background: #ee4b41;
+    position: absolute;
+    left: -1.7px;
+    transition: height .4s linear;
 }
 .about-contacts .left .wrap {
     padding: 90px 30px;
@@ -1449,9 +1450,9 @@ ul.grid li:first-child a {
 	width: 10px;
 	height: 10px;
 	background: #f1efef;
-	right: -5px;
-	top: 50%;
-	transform: rotate(45deg);
+	right: -6px;
+	top: 23%;
+	border-radius: 50%;
 	-webkit-transition: all .4s linear;
 	-o-transition: all .4s linear;
 	transition: all .4s linear;
@@ -1462,8 +1463,8 @@ ul.grid li:first-child a {
 	height: 10px;
 	background: #f1efef;
 	left: -5px;
-	top: 50%;
-	transform: rotate(45deg);
+	top: 19.5%;
+	border-radius: 50%;
 	-webkit-transition: all .4s linear;
 	-o-transition: all .4s linear;
 	transition: all .4s linear;

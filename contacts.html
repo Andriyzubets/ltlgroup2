@@ -109,7 +109,7 @@
 			ВОЙТИ
 		</div>
 	</header>
-	<section class="separator" style="padding-top: 150px; text-align: left;padding-left: 10%;">
+	<section class="separator" style="padding-top: 150px; text-align: left;padding-left: 10%;background: none;">
 		LTL Group | О нас
 	</section>
 	<section class="about-contacts">
@@ -419,8 +419,9 @@ anchors.forEach(function(item) {
 var block = document.querySelector('.right .line');
 var imgRightOne = document.querySelector('.right .img-right-1');
 var pointerOne = document.querySelector('.left .pointer');
+var pointerTwo = document.querySelector('.right .pointer');
 
-var element1 = document.querySelector('.left .pointer'); //replace elementId with your element Id.
+// var element1 = document.querySelector('.left .pointer');
 
 var scrollTop = document.body.scrollTop;
 
@@ -429,7 +430,8 @@ window.addEventListener('scroll', function() {
 	scroll = window.pageYOffset || document.documentElement.scrollTop,
 	height = scroll > 335 ? scroll - 335 : 0;
 	position = scroll > 150 ? 100 - Math.floor(scroll/800*100) : 70;
-	pointOne = scroll > Math.floor(document.querySelector('.left .pointer').getBoundingClientRect().top+scrollTop+200) ? pointerOne.style.background='#ee4b41' : pointerOne.style.background='#f1efef';
+	pointOne = scroll > Math.floor(document.querySelector('.left .pointer').getBoundingClientRect().top+scrollTop+110) ? pointerOne.style.background='#ee4b41' : pointerOne.style.background='#f1efef';
+	pointTwo = scroll > Math.floor(document.querySelector('.right .pointer').getBoundingClientRect().top+scrollTop + 450) ? pointerTwo.style.background='#ee4b41' : pointerTwo.style.background='#f1efef';
 
 
 	block.style.height = height + 'px';
