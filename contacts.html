@@ -120,8 +120,8 @@
 		<div id="contact-start" class="left">
 			<div class="wrap">
 				<p>
-					Наша цель продавать не продукцию, а готовые решения.</p>
-					<p>
+				Наша цель продавать не продукцию, а готовые решения.</p>
+				<p>
 					<br><br> С самого основания компании мы занимаемся исключительно технологиями покрытий для древесины.
 					<br><br>
 					Самые главные активы нашей компании это:
@@ -129,6 +129,8 @@
 					<br>грамотный персонал,
 					<br>понимание мировых тенденций и направлений в отделке древесины.
 				</p>
+				<div class="pointer">
+				</div>
 			</div>
 		</div>
 		<div class="right">
@@ -136,6 +138,38 @@
 			<div class="wrap">
 				<img class="img-right-1" src="img/left-side-lay.jpg" alt="">
 			</div>
+			<section class="why">
+				<div class="pointer">
+				</div>
+				<div class="wrap advantages__items">
+					<h2>Почему выбирают именно нас?</h2>
+					<h3>Потому что с нами удобно:</h3>
+					<div class="item">
+						<h4>Обучение</h4>
+						<p>Мы научим Ваш персонал делать шедевры ...</p>
+					</div>
+					<div class="item">
+						<h4>Аудит малярного участка</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing. ...</p>
+					</div>
+					<div class="item">
+						<h4>Консалтинг</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur. ...</p>
+					</div>
+					<div class="item">
+						<h4>Консультация технолога</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing. ...</p>
+					</div>
+					<div class="item">
+						<h4>Индивидуальный подход</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing. ...</p>
+					</div>
+					<div class="item">
+						<h4>Консалтинг</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur. ...</p>
+					</div>
+				</div>
+			</section>
 		</div>
 	</section>
 	<section class="separator">
@@ -384,19 +418,32 @@ anchors.forEach(function(item) {
 
 var block = document.querySelector('.right .line');
 var imgRightOne = document.querySelector('.right .img-right-1');
+var pointerOne = document.querySelector('.left .pointer');
+
+var element1 = document.querySelector('.left .pointer'); //replace elementId with your element Id.
+
+var scrollTop = document.body.scrollTop;
 
 window.addEventListener('scroll', function() {
 	var
 	scroll = window.pageYOffset || document.documentElement.scrollTop,
 	height = scroll > 335 ? scroll - 335 : 0;
 	position = scroll > 150 ? 100 - Math.floor(scroll/800*100) : 70;
+	pointOne = scroll > Math.floor(document.querySelector('.left .pointer').getBoundingClientRect().top+scrollTop+200) ? pointerOne.style.background='#ee4b41' : pointerOne.style.background='#f1efef';
+
+
 	block.style.height = height + 'px';
 	imgRightOne.style.transform = 'translate(15%,'+position+'%)';
-
+	console.log(scroll)
 });
 var lh = document.querySelector('.about-contacts .left');
 var height = window.getComputedStyle(lh, null).height;
 document.querySelector('.right .line').style.maxHeight=height;
+
+// test
+
+
+
 </script>
 </body>
 </html>

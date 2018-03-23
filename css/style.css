@@ -826,13 +826,32 @@ On click the images will be displayed at normal size to complete the effect
 }
 
 /* why */
-.why, .benefit {
+.benefit {
 	padding: 70px 0;
 	border-bottom: .5px solid #ccc;
 }
-.why .wrap, .benefit .wrap {
+.why {
+	padding: 200px 0 30px;
+	position: relative;
+}
+.benefit .wrap {
 	max-width: 1045px;
 	width: 100%;
+	margin: 0 auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.why .wrap {
+	width: 90%;
 	margin: 0 auto;
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -852,17 +871,19 @@ On click the images will be displayed at normal size to complete the effect
 }
 .why .wrap h2 {
 	font-size: 24px;
+	text-align: left;
 }
 .why .wrap h3 {
 	font-size: 30px;
 	margin: 20px 0 40px;
+	text-align: left;
 	color: #111111;
 
 }
 .why .item {
-	width: 30%;
+	width: 45%;
 	height: 160px;
-	text-align: center;
+	text-align: left;
 	padding: 40px 0;
 	position: relative;
 }
@@ -873,7 +894,7 @@ On click the images will be displayed at normal size to complete the effect
 	font: 243px "Montserrat",sans-serif;
 	content: "1";
 	top: 0;
-	left: 50%;
+	left: 35%;
 	-webkit-transform: translate(-50%,-15%);
 	-ms-transform: translate(-50%,-15%);
 	transform: translate(-50%,-15%);
@@ -1416,21 +1437,36 @@ ul.grid li:first-child a {
 	transition: height .4s linear;
 }
 .about-contacts .left .wrap {
-	padding: 90px 0;
-	width: 90%;
+    padding: 90px 30px;
 	margin: 0 auto;
 	letter-spacing: 2px;
 	font-size: 12px;
 	text-align: right;
 	position: relative;
 }
-.about-contacts .left .wrap:after {
-	content: "";
+.about-contacts .left .pointer {
 	position: absolute;
 	width: 10px;
 	height: 10px;
-	background: #ccc;
-	right: -7%;
+	background: #f1efef;
+	right: -5px;
+	top: 50%;
+	transform: rotate(45deg);
+	-webkit-transition: all .4s linear;
+	-o-transition: all .4s linear;
+	transition: all .4s linear;
+}
+.about-contacts .right .pointer {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background: #f1efef;
+	left: -5px;
+	top: 50%;
+	transform: rotate(45deg);
+	-webkit-transition: all .4s linear;
+	-o-transition: all .4s linear;
+	transition: all .4s linear;
 }
 .about-contacts .left .wrap p:first-child {
 	font-size: 24px;
@@ -1438,5 +1474,5 @@ ul.grid li:first-child a {
 }
 .about-contacts .right .img-right-1 {
 	width: 80%;
-    transform: translate(15%, 70%);
+	transform: translate(15%, 70%);
 }
