@@ -132,6 +132,59 @@
 				<div class="pointer">
 				</div>
 			</div>
+			<img class="img-left-1" src="img/item2.jpg" alt="">
+			<div class="container-adress">	
+				<div class="header-contacts">
+					Общая информация
+				</div>
+				<div class="main">
+					<ul class="contact-list">
+						<li>
+							<span>
+								Адрес
+							</span>
+							<span>
+								Киев, Палладина
+							</span>
+						</li>
+						<li>
+							<span>
+								Почта
+							</span>
+							<span>
+								<a href="mailto:mail@ltl.ua">mail@ltl.ua</a>
+							</span>
+						</li>
+						<li>
+							<span>
+								Телефон 
+							</span>
+							<span>
+									+38 044 000 00 00
+							</span>
+						</li>
+						<li>
+							<span>
+								График работы
+							</span>
+							<span>
+								09:00 - 18:00 - административный офис <br>
+							</span>
+							<span>
+								08:00 - 17:00 - Производственный отдел
+							</span>
+						</li>
+						<li>
+							<span>
+								Оставайтесь на связи
+							</span>
+							<div class="social-links">
+								
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 		<div class="right">
 			<div class="line"></div>
@@ -418,6 +471,7 @@ anchors.forEach(function(item) {
 
 var block = document.querySelector('.right .line');
 var imgRightOne = document.querySelector('.right .img-right-1');
+var imgLeftOne = document.querySelector('.left .img-left-1');
 var pointerOne = document.querySelector('.left .pointer');
 var pointerTwo = document.querySelector('.right .pointer');
 
@@ -430,13 +484,16 @@ window.addEventListener('scroll', function() {
 	scroll = window.pageYOffset || document.documentElement.scrollTop,
 	height = scroll > 335 ? scroll - 335 : 0;
 	position = scroll > 150 ? 100 - Math.floor(scroll/800*100) : 70;
+	position1 = scroll > 755 ? 100 - Math.floor(scroll/1600*100) : 55;
 	pointOne = scroll > Math.floor(document.querySelector('.left .pointer').getBoundingClientRect().top+scrollTop+110) ? pointerOne.style.background='#ee4b41' : pointerOne.style.background='#f1efef';
 	pointTwo = scroll > Math.floor(document.querySelector('.right .pointer').getBoundingClientRect().top+scrollTop + 450) ? pointerTwo.style.background='#ee4b41' : pointerTwo.style.background='#f1efef';
 
 
 	block.style.height = height + 'px';
 	imgRightOne.style.transform = 'translate(15%,'+position+'%)';
-	console.log(scroll)
+	imgLeftOne.style.transform = 'translate(15%,'+position1+'%)' + 'rotate(90deg)';
+	console.log(scroll);
+
 });
 var lh = document.querySelector('.about-contacts .left');
 var height = window.getComputedStyle(lh, null).height;
