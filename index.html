@@ -266,23 +266,41 @@
 			<a href="">Подобрать оборудование</a>
 		</div>
 	</section>
-	<section class="main-faq">
-		<div class="faqs">
-			<input type="radio" name="slide_switch" id="id1" checked="checked"/>
-			<label for="id1" class="id1">
-				<p>Инженер 999 категории</p>
-				<span>Ильяшов В.И.</span>
-			</label>
-			<div class="img">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci magni sed molestiae quibusdam debitis a. Commodi veritatis, sed alias fuga eligendi nobis distinctio reiciendis, nisi nesciunt eum, praesentium explicabo tenetur?"
-				<br><br>
-				<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere repellat, modi doloremque rem ipsum voluptas voluptatibus, eaque perspiciatis sunt provident repudiandae beatae temporibus tempore veniam magni tempora iusto consequuntur minus.</span>
-					<span>Voluptatem tempore dicta, pariatur. Soluta fugit suscipit quis, eos a consequatur expedita, eligendi perferendis nesciunt, odit eum iste quisquam aut quae iusto! Minus consequuntur officia quo commodi, dolorem recusandae voluptatum!</span>
-					<span>Dicta ipsum deleniti consequatur sint omnis dolores numquam esse earum, mollitia assumenda culpa quia, similique doloremque eaque fugiat pariatur maiores, amet consectetur rerum sunt! Debitis ut sunt eos distinctio expedita!</span>
-				</p>
-			</div>
-			
-		</div>
+	<!-- Slider -->
+	<section class="slider-center">
+		<ul id="slides">
+			<li class="slide showing slide1">
+				<div class="content">
+					<p>Равным образом рамки и место обучения кадров позволяет выполнять важные задания по разработке позиций?</p>
+					<p>С другой стороны консультация с широким активом играет важную роль в формировании систем массового участия. Задача организации, в особенности же дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации новых предложений</p>
+				</div>
+				<div class="img">
+					
+				</div>
+			</li>
+			<li class="slide slide2">
+				<div class="content">
+					<p>Идейные соображения высшего порядка, а также сложившаяся структура?</p>
+					<p>аким образом сложившаяся структура организации позволяет выполнять важные задания по разработке направлений прогрессивного развития.</p>
+				</div>
+				<div class="img">
+					
+				</div>
+			</li>
+			<li class="slide slide3">
+				<div class="content">
+					<p>Задача организации, в особенности же дальнейшее развитие различных форм деятельности?</p>
+					<p>Равным образом рамки и место обучения кадров позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач. Таким образом сложившаяся структура организации позволяет выполнять важные задания по разработке направлений прогрессивного развития.</p>
+				</div>
+				<div class="img">
+					
+				</div>
+			</li>
+		</ul>
+		<a class="more" href="faq.html"><span>Узнать детальнее</span></a>
+		<button class="controls" id="pause">Остановить</button>
 	</section>
+	<!-- Benefits -->
 	<section class="benefit">
 		<div class="wrap">
 			<div class="picture">
@@ -476,26 +494,56 @@
 	var s = slideArray[randomInteger(0,1)];
 
 	document.querySelector(s).style.display='block';
+// slider center 
+var slides = document.querySelectorAll('#slides .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,3000);
 
+function nextSlide(){
+	slides[currentSlide].className = 'slide';
+	currentSlide = (currentSlide+1)%slides.length;
+	slides[currentSlide].className = 'slide showing';
+}
 
-	function openbox(id){
-		display = document.getElementById(id).style.left;
+var playing = true;
+var pauseButton = document.getElementById('pause');
 
-		if(display=='-100vw'){
-			document.getElementById(id).style.left='0';
-		}else{
-			document.getElementById(id).style.left='-100vw';
-		}
+function pauseSlideshow(){
+	pauseButton.innerHTML = 'Возобновить';
+	playing = false;
+	clearInterval(slideInterval);
+}
+
+function playSlideshow(){
+	pauseButton.innerHTML = 'Остановить';
+	playing = true;
+	slideInterval = setInterval(nextSlide,2000);
+}
+
+pauseButton.onclick = function(){
+	if(playing){ pauseSlideshow(); }
+	else{ playSlideshow(); }
+};
+// Opnebox clicks
+
+function openbox(id){
+	display = document.getElementById(id).style.left;
+
+	if(display=='-100vw'){
+		document.getElementById(id).style.left='0';
+	}else{
+		document.getElementById(id).style.left='-100vw';
 	}
-	function popup(id){
-		display = document.getElementById(id).style.left;
+}
+function popup(id){
+	display = document.getElementById(id).style.left;
 
-		if(display=='100vw'){
-			document.getElementById(id).style.left='15vw';
-		}else{
-			document.getElementById(id).style.left='100vw';
-		}
+	if(display=='100vw'){
+		document.getElementById(id).style.left='15vw';
+	}else{
+		document.getElementById(id).style.left='100vw';
 	}
+}
 </script>
 </body>
 </html>
