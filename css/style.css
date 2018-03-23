@@ -1040,7 +1040,8 @@ On click the images will be displayed at normal size to complete the effect
 }
 .footer li {
 	font-size: 16px;
-	line-height: 1.5;
+	line-height: 2em;
+	letter-spacing: 3px;
 }
 .footer .contacts .social {
 	display: -webkit-flex;
@@ -1208,8 +1209,10 @@ On click the images will be displayed at normal size to complete the effect
 	font-size: 12px;
 	margin: 0px 0 15px;
 }
+/******************************
+********** GALLERY page ***********
+*******************************/
 
-/* GALLERY STYLE */
 .gallery-separator {
 	padding: 100px 0 0 0;
 }
@@ -1218,21 +1221,21 @@ On click the images will be displayed at normal size to complete the effect
 	border-color: rgba(255, 255, 255, 0.5);
 	transition: background-color 0.2s ease;
 	font-weight: 300;
-  }
-  .btn:hover {
+}
+.btn:hover {
 	border-color: rgba(255, 255, 255, 0.7);
-  }
-  .btn {
+}
+.btn {
 	border-radius: 0px;
-  }
-  .btn-default {
+}
+.btn-default {
 	background-color: rgba(0, 0, 0, 0.043);
 	border: 1px solid rgba(0, 0, 0, 0.15);
 	border-radius: 0px;
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.05) inset;
 	margin: 0;
 	padding: 5px;
-  }
+}
 .portfolio-item h3 {
 	color: #ffffff;
 	margin: 0;
@@ -1241,28 +1244,31 @@ On click the images will be displayed at normal size to complete the effect
 	font-weight: 400;
 	text-transform: uppercase;
 	line-height: 1em;
-  }
-  ul.portfolio li a,
-  ul.grid li:first-child a {
+}
+ul.portfolio li a,
+ul.grid li:first-child a {
 	padding: 0 !important;
 	margin: 0 !important;
-  }
-  .portfolio-filter {
+}
+.portfolio-filter {
 	margin: 0;
 	padding: 0px;
 	text-align: center;
-  }
-  .portfolio-filter li {
+}
+.portfolio-filter li {
 	list-style: none;
 	display: inline-block;
-  }
-  .portfolio-filter-label {
+}
+.portfolio-filter-label {
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 10px;
 	padding: 11px 12px;
-  }
-/* END GALLERY STYLE */
+}
+/******************************
+********** complex page ***********
+*******************************/
+
 .complex-page .item:after {
 	width: 100%;
 }
@@ -1280,7 +1286,7 @@ On click the images will be displayed at normal size to complete the effect
 	padding: 0 0 3px;
 }
 
-  /* BLOG STYLE */
+/* BLOG STYLE */
 .complex-blog .img-bg {
 	position: relative;
 	width: calc(100% - 80px);
@@ -1299,41 +1305,120 @@ On click the images will be displayed at normal size to complete the effect
 }
 /* .complex-blog .little-arrow:before {
 	content: "\e901";
-} */
-.complex-blog .little-arrow::after {
-    content: ''; 
-    position: absolute; /* Абсолютное позиционирование */
-    left: -15px; bottom: -32px; /* Положение треугольника */
-    border: 10px solid transparent; /* Прозрачные границы */
-    border-top: 10px solid #000; /* Добавляем треугольник */
-   }
+	} */
+	.complex-blog .little-arrow::after {
+		content: ''; 
+		position: absolute; /* Абсолютное позиционирование */
+		left: -15px; bottom: -32px; /* Положение треугольника */
+		border: 10px solid transparent; /* Прозрачные границы */
+		border-top: 10px solid #000; /* Добавляем треугольник */
+	}
 
-.complex-blog .item {
-	height: auto;
-	margin-bottom: 100px;
+	.complex-blog .item {
+		height: auto;
+		margin-bottom: 100px;
+	}
+	.complex-blog .item:after {
+		visibility: hidden;
+	}
+	.complex-blog .little-arrow {
+		position: absolute;
+		left: -10px;
+		top: 10px;
+	}
+	.complex-blog .info-text {
+		position: absolute;
+		left: 25%;
+		top: 95%;
+		width: calc(100% - 140px);
+		text-align: left;
+	}
+	.complex-blog .info-text span:nth-child(2n) {
+		font-size: 22px;
+		color: #000;
+		width: calc(100% - 40px);
+		font-weight: bold;
+		line-height: 34px;
+	}
+	.cbImg {
+		height: 100%;
+	}
+/******************************
+********** contacts page ***********
+*******************************/
+.about-contacts {
+	padding: 30px 0 0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
 }
-.complex-blog .item:after {
-	visibility: hidden;
+
+.about-contacts .central {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 36px;
+	letter-spacing: 6px;
+	height: calc(100vh - 220px);
+	background: url(../img/item1.jpg) 50% no-repeat;
+	color: #fff;
+	text-shadow: 0 0 20px #000;
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: relative;
 }
-.complex-blog .little-arrow {
+.about-contacts .central a {
+	transform: rotate(-90deg);
 	position: absolute;
-	left: -10px;
-	top: 10px;
+	text-align: center;
+	font-size: 11px;
+	left: calc(48% - 40px);
+	line-height: 1.2em;
+	bottom: 60px;
+	transition: all .6s ease-in-out;
+	background: linear-gradient(to right, #525252, lightgray, #5f5f5f);
+	color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-position: 0 0;
+	animation: bgGradient 1.5s infinite alternate;
+	font-weight: 700;
 }
-.complex-blog .info-text {
-	position: absolute;
-	left: 25%;
-	top: 95%;
-	width: calc(100% - 140px);
-	text-align: left;
+@keyframes bgGradient {
+	100% {
+		background-position: 100px 0;
+	}
 }
-.complex-blog .info-text span:nth-child(2n) {
-	font-size: 22px;
-	color: #000;
-	width: calc(100% - 40px);
-	font-weight: bold;
-	line-height: 34px;
+.about-contacts .left {
+	padding: 30px 0;
+	width: 40%;
+	position: relative;
+	border-right: 1px solid #f1efef;
 }
-.cbImg {
-	height: 100%;
+.about-contacts .right {
+	width: calc(60% - 1px);
+	position: relative;
+	background: linear-gradient(to right, #fff, transparent), url(../img/left-side-lay.jpg) 50% no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.about-contacts .right .line {
+    width: 1px;
+    background: #ee4b41;
+    position: absolute;
+    left: -1px;
+    transition: height .4s linear;
+}
+.about-contacts .left .wrap {
+	width: 90%;
+	margin: 0 auto;
 }
