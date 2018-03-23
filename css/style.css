@@ -1406,9 +1406,7 @@ ul.grid li:first-child a {
 .about-contacts .right {
 	width: calc(60% - 1px);
 	position: relative;
-	background: linear-gradient(to right, #fff, transparent), url(../img/left-side-lay.jpg) 50% no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
+
 }
 .about-contacts .right .line {
 	width: 1px;
@@ -1418,14 +1416,27 @@ ul.grid li:first-child a {
 	transition: height .4s linear;
 }
 .about-contacts .left .wrap {
-	padding: 30px 0;
+	padding: 90px 0;
 	width: 90%;
 	margin: 0 auto;
 	letter-spacing: 2px;
 	font-size: 12px;
-    text-align: right;
+	text-align: right;
+	position: relative;
+}
+.about-contacts .left .wrap:after {
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background: #ccc;
+	right: -7%;
 }
 .about-contacts .left .wrap p:first-child {
-	    font-size: 24px;
-    font-weight: 700;
+	font-size: 24px;
+	font-weight: 700;
+}
+.about-contacts .right .img-right-1 {
+	width: 80%;
+    transform: translate(15%, 70%);
 }
