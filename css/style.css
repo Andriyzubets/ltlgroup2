@@ -1399,7 +1399,6 @@ ul.grid li:first-child a {
 	}
 }
 .about-contacts .left {
-	padding: 30px 0;
 	width: 40%;
 	position: relative;
 	border-right: 1px solid #f1efef;
@@ -1412,13 +1411,21 @@ ul.grid li:first-child a {
 	background-size: cover;
 }
 .about-contacts .right .line {
-    width: 1px;
-    background: #ee4b41;
-    position: absolute;
-    left: -1px;
-    transition: height .4s linear;
+	width: 1px;
+	background: #ee4b41;
+	position: absolute;
+	left: -1px;
+	transition: height .4s linear;
 }
 .about-contacts .left .wrap {
+	padding: 30px 0;
 	width: 90%;
 	margin: 0 auto;
+	letter-spacing: 2px;
+	font-size: 12px;
+    text-align: right;
+}
+.about-contacts .left .wrap p:first-child {
+	    font-size: 24px;
+    font-weight: 700;
 }
