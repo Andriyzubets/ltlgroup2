@@ -881,10 +881,20 @@ h1 {
 	.slider-center .slide .img {
 		width: 40%;
 	}
-	.slider-center .slide .img {
+	.slider-center li:nth-of-type(1) .img {
 		background: url(../img/person-test-1.png) 0% 0% no-repeat;
 		background-size: contain;
 		transform: rotateY(180deg);
+	}
+	.slider-center li:nth-of-type(2) .img {
+		background: url(../img/person-test-2.png) 50% no-repeat;
+		background-size: contain;
+		transform: rotateY(180deg);
+	}
+	.slider-center li:nth-of-type(3) .img {
+		background: url(../img/person-test-3.png) 50% no-repeat;
+		background-size: contain;
+
 	}
 	.slider-center .slide .content {
 		width: 60%;
@@ -1410,14 +1420,31 @@ ul.grid li:first-child a {
 	padding: 0 !important;
 	margin: 0 !important;
 }
+.portfolio-filter-container {
+	max-width: 1045px;
+	width: 100%;
+	margin: 30px auto 0;
+}
 .portfolio-filter {
-	margin: 0;
+	margin: 0 0 14px;
 	padding: 0px;
-	text-align: center;
+	display: flex;
 }
 .portfolio-filter li {
 	list-style: none;
-	display: inline-block;
+	display: flex;
+}
+.portfolio-filter li a {
+	width: 100px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	-ms-align-items: center;
+	align-items: center;
 }
 .portfolio-filter-label {
 	font-weight: bold;
@@ -1425,6 +1452,83 @@ ul.grid li:first-child a {
 	font-size: 10px;
 	padding: 11px 12px;
 }
+.portfolio-filter-up a {
+	width: 100px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	-ms-align-items: center;
+	align-items: center;
+	text-decoration: none;
+	outline: none;
+	display: inline-block;
+	padding: 9px 10px;
+	margin: 10px 5px;
+	border-radius: 10px;
+	background-image: linear-gradient(45deg, #ee4b41 0%, #ffd6d6 50%, #ee4b41 100%);
+	background-position: 100% 0;
+	background-size: 200% 200%;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	color: white;
+	box-shadow: 5px 5px 10px #ccc;
+	transition: .5s;
+}
+.portfolio-filter-up a:hover, .portfolio-filter-up a.portfolio-selected {
+	box-shadow: 0 0 0 0 rgba(0,40,120,0);
+	background-position: 0 0;
+}
+.portfolio-filter-down a {
+	    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 0 5px;
+    position: relative;
+    color: #474038;
+    border: 1px solid #ccc;
+    background: none;
+    font-weight: 300;
+    /* font-family: 'Montserrat', sans-serif; */
+    /* text-transform: uppercase; */
+    letter-spacing: 2px;
+}
+.portfolio-filter-down a:before,
+.portfolio-filter-down a:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  box-sizing: border-box;
+}
+.portfolio-filter-down a:before {
+  bottom: 0;
+  left: 0;
+  border-left: 1px solid #474038;
+  border-top: 1px solid #474038;
+  transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+}
+.portfolio-filter-down a:after {
+  top: 0;
+  right: 0;
+  border-right: 1px solid #474038;
+  border-bottom: 1px solid #474038;
+  transition: 0s ease opacity .4s, .2s ease width , .2s ease height .2s;
+}
+.portfolio-filter-down a:hover:before,
+.portfolio-filter-down a:hover:after, .portfolio-filter-down a.portfolio-selected:after, .portfolio-filter-down a.portfolio-selected:before {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+.portfolio-filter-down a:hover:before {transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;}
+.portfolio-filter-down a:hover:after {transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s;}
+.portfolio-filter-down a:hover {background: rgba(255,255,255,.2);}
 /******************************
 ********** complex page ***********
 *******************************/
