@@ -1513,6 +1513,7 @@ ul.grid li:first-child a {
   border-top: 1px solid #474038;
   transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
 }
+
 .portfolio-filter-down a:after {
   top: 0;
   right: 0;
