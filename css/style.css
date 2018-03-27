@@ -585,8 +585,6 @@ h1 {
 	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
-	-ms-align-items: center;
-	align-items: center;
 	padding: 30px 0 0px 140px;
 	-webkit-flex-wrap: wrap;
 	-moz-flex-wrap: wrap;
@@ -596,7 +594,7 @@ h1 {
 }
 
 .complex .item {
-	width: 27%;
+	width: 30%;
 	height: 150px;
 	margin: 0 0 20px;
 }
@@ -1466,6 +1464,7 @@ ul.grid li:first-child a {
 .portfolio-filter li {
 	list-style: none;
 	display: flex;
+	margin: 0 10px 0 0;
 }
 .portfolio-filter li a {
 	width: 100px;
@@ -1478,6 +1477,8 @@ ul.grid li:first-child a {
 	text-align: center;
 	-ms-align-items: center;
 	align-items: center;
+	border: none;
+	background: none;
 }
 .portfolio-filter-label {
 	font-weight: bold;
@@ -1588,7 +1589,7 @@ ul.grid li:first-child a {
 .complex-blog .img-bg {
 	position: relative;
 	width: calc(100% - 80px);
-	height: 400px;
+	height: 200px;
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -1596,7 +1597,7 @@ ul.grid li:first-child a {
 	position: absolute;
 	text-transform: uppercase;
 	transform: rotate(270deg);
-	left: -120px;
+	left: -140px;
 	top: 160px;
 	width: 100%;
 	text-align: right;
@@ -1607,7 +1608,8 @@ ul.grid li:first-child a {
 	.complex-blog .little-arrow::after {
 		content: ''; 
 		position: absolute; /* Абсолютное позиционирование */
-		left: -15px; bottom: -32px; /* Положение треугольника */
+		left: -20px;
+		bottom: -18px; /* Положение треугольника */
 		border: 10px solid transparent; /* Прозрачные границы */
 		border-top: 10px solid #000; /* Добавляем треугольник */
 	}
@@ -1620,23 +1622,27 @@ ul.grid li:first-child a {
 		visibility: hidden;
 	}
 	.complex-blog .little-arrow {
-		position: absolute;
-		left: -10px;
-		top: 10px;
+		
 	}
 	.complex-blog .info-text {
-		position: absolute;
-		left: 25%;
-		top: 95%;
-		width: calc(100% - 140px);
-		text-align: left;
+		text-align: center;
+		position: relative;
 	}
-	.complex-blog .info-text span:nth-child(2n) {
-		font-size: 22px;
+	.complex-blog .info-text span {
+		font-size: 18px;
 		color: #000;
 		width: calc(100% - 40px);
 		font-weight: bold;
-		line-height: 34px;
+		line-height: 1.2em;
+		margin: 0 0 20px;
+		display: block;
+		margin: 5px auto 20px;
+	}
+	.complex-blog .excerpts {
+		width: calc(100% - 50px);
+		display: block;
+		margin: 0 auto;
+		text-align: justify;
 	}
 	.cbImg {
 		height: 100%;
