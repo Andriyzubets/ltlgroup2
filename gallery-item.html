@@ -2,10 +2,15 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>LTL Group | Комплексные решения</title>
+	<title>LTL Group | Галерея решений</title>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,700,900&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/royalslider.css">
+	<link rel="stylesheet" href="css/rs-default.css">
+	<!-- <link rel="stylesheet" href="css/jquery-ui-1.8.22.custom.css"> -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 	<header class="header">
@@ -16,7 +21,7 @@
 					Главная
 				</a>
 			</li>
-			<li class="active">
+			<li>
 				<a href="complex.html">
 					Готовые решения
 				</a>
@@ -26,12 +31,12 @@
 					Продукция
 				</a>
 			</li>
-			<li>
+			<li class="active">
 				<a href="gallery.html">
 					Галерея решений
 				</a>
 			</li>
-			<li>
+			<li >
 				<a href="blog.html">
 					Блог
 				</a>
@@ -111,112 +116,22 @@
 	</header>
 	
 	<section class="separator gallery-separator">
-		решения по видам отделки
+		На этом месте находится заголовок галереи
 	</section>
-	<section class="complex complex-page">
-		<div class="portfolio-filter-container margin-top-20">
-			<ul class="portfolio-filter portfolio-filter-up">
-				<li class="portfolio-filter-label label label-primary">
-					Выбрать по типу отделки:
-				</li>
-				<li>
-					<a href="#" class="portfolio-selected" data-filter="*">Все</a>
-				</li>
-				<!-- <label for="vid">Виды отделки</label>
-				<select name="vid" id="first">
-					<option value="*">Все</option>
-					<option value=".code">Прозрачная</option>
-					<option value=".design">Пигментированная</option>
-				</select>
-				<select id="second" >
-					<option value=".audio">Отделка 3</option>
-					<option value=".video">Отделка 4</option>
-				</select> -->
+	<section class="gallery-content-container">
+		<div id="gallery-1" class="royalSlider rsDefault visibleNearby">
+		    <a class="rsImg" href="img/item3.jpg">image desc <img  class="rsTmb" src="img/item3.jpg" /></a>
+		    <a class="rsImg" href="img/left-side-lay.jpg">image desc <img  class="rsTmb" src="img/left-side-lay.jpg" /></a>
+		    <a class="rsImg" href="img/right-side-lay.png">image desc <img  class="rsTmb" src="img/right-side-lay.png" /></a>
+		    <a class="rsImg" href="img/item2.jpg">image desc <img  class="rsTmb" src="img/item2.jpg" /></a>
+		    <a class="rsImg" href="img/item1.jpg">image desc <img  class="rsTmb" src="img/item1.jpg" /></a>
 
-				<li>
-					<a href="#" class="" id="fff" data-filter=".code" >Отделка 1</a>
-				</li>
-				<li>
-					<a href="#" class="" data-filter=".design">Отделка 2</a>
-				</li>
-				<li>
-					<a href="#" class="" data-filter=".audio">Отделка 3</a>
-				</li>
-				<li>
-					<a href="#" class="" data-filter=".video">Отделка 4</a>
-				</li>
-			</ul>
-			<ul class="portfolio-filter portfolio-filter-down">
-				<li class="portfolio-filter-label label label-primary">
-					Выбрать по области применения:
-				</li>
-				<li>
-					<a href="" class="portfolio-selected" data-filter="*">Все</a>
-				</li>
-				<li>
-					<a href="#" class="" data-filter=".code">Деревянные покрытия</a>
-				</li>
-				<li>
-					<a href="#" class="" data-filter=".design">Фасад</a>
-				</li>
-				<li>
-					<a href="#" class="" data-filter=".audio">Металлические покрытия</a>
-				</li>
-				<li>
-					<a href="#" class="" data-filter=".video">Пластиковые покрытия</a>
-				</li>
-			</ul>
 		</div>
-		<div class="wrap portfolio-group">
-			<a href="#" class="item item1 portfolio-item video">
-				<h3>Закрытопористая</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci.</p>
-			</a>
-			<a href="#" class="item item2 portfolio-item design">
-				<h3>Открытопористая</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci.</p>
-			</a>
-			<a href="#" class="item item3 portfolio-item design">
-				<h3>Матовая</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci.</p>
-			</a>
-			<a href="#" class="item item2 portfolio-item video">
-				<h3>Глянцевая</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci.</p>
-			</a>
-			<a href="#" class="item item3 portfolio-item video">
-				<h3>Прозрачная</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci.</p>
-			</a>
-			<a href="#" class="item item1 portfolio-item code">
-				<h3>Пигментированная</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci.</p>
-			</a>
-			<a href="#" class="item item3 portfolio-item audio">
-				<h3>Внутренняя</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci.</p>
-			</a>
-			<a href="#" class="item item2 portfolio-item audio">
-				<h3>Наружная</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci.</p>
-			</a>
-			<a href="#" class="item item3 portfolio-item audio">
-				<h3>Спецэффекты</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci.</p>
-			</a>
-			<a href="#" class="item item3 portfolio-item audio">
-				<h3>Спецэффекты</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci.</p>
-			</a>
+		<div class="gallery-content-description">
+			В этом месте мы красиво опишем как и что нужно делать, чтобы получился тот же эффект, что в галерее.
+			<br>
 		</div>
-		<!-- <div id="back-font" class="back-font" style="left: -100vw" onclick="openbox('back-font');popup('popup'); return false"></div>
-		<div id="popup" class="popup" style="left: 100vw">
-			Дополнительно можно разместить завлекающий отрывок информации тут.
-		</div> -->
-	</section>	
-	<!-- <section class="separator">
-		Мы знаем ответы
-	</section> -->
+	</section>
 	<section class="separator">
 		навигация по сайту
 	</section>
@@ -248,6 +163,7 @@
 	<section class="separator">
 		Наши контакты
 	</section>
+
 	<footer class="footer">
 		<div class="contacts">
 			<ul>
@@ -295,7 +211,10 @@
 	</footer>
 	<!-- SCRIPT SORTED -->
 	<script type="text/javascript" src="js/jquery.js"></script>
-	
+		
+	<!-- <script src="js/jquery-ui-1.8.22.custom.min.js"></script> -->
+	<script src="js/jquery.royalslider.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
 
 	<script type="text/javascript">
 		// fixmenu 
@@ -428,14 +347,139 @@ $(window).load(function() {
 
 });
 
-// var a = document.querySelector('.portfolio-filter-container select').value;
-// function firstChange(id) {
-// 	document.getElementById(id).setAttribute('data-filter', a);
-// 	alert(a);
-// }
+
+// Slider gallery 
+
+jQuery(document).ready(function($){
+	var windowsWidth = jQuery(window).width();
+	
+	if (jQuery(window).width() > 992 ) {
+		
+	jQuery('.royalSlider').royalSlider({
+		arrowsNav: true,
+		loop: false,
+		keyboardNavEnabled: true,
+		controlsInside: false,
+		imageScaleMode: 'fit-if-smaller',
+		imageScalePadding: 10,
+		arrowsNavAutoHide: false,
+		autoScaleSlider: false,
+		autoScaleSliderWidth: 0,
+		autoScaleSliderHeight: 0,
+		controlNavigation: 'thumbnails',
+		thumbsFitInViewport: false,
+		navigateByClick: true,
+		startSlideId: 0,
+    	autoPlay: {
+    		// autoplay options go gere
+    		enabled: false,
+			delay: 5000,
+    		pauseOnHover: false,
+			stopAtAction: false
+    	},
+		transitionType:'move',
+		globalCaption: false,
+		deeplinking: {
+			enabled: true,
+			change: false
+		},
+		slidesSpacing:10,
+		visibleNearby: {
+            enabled: true,
+            centerArea: 0.5,
+            center: true,
+            breakpoint: 650,
+            breakpointCenterArea: 0.64,
+            navigateByCenterClick: false
+        },
+		addActiveClass: true
+	});	
+	
+	} else {
+		
+	jQuery('.royalSlider').royalSlider({
+		arrowsNav: false,
+		loop: true,
+		keyboardNavEnabled: true,
+		controlsInside: false,
+		imageScaleMode: 'fit-if-smaller',
+		imageScalePadding: 10,
+		arrowsNavAutoHide: false,
+		autoScaleSlider: true,
+		autoScaleSliderWidth: 0,
+		autoScaleSliderHeight: 0,
+		controlNavigation: 'thumbnails',
+		thumbsFitInViewport: false,
+		navigateByClick: true,
+		startSlideId: 0,
+    	autoPlay: {
+    		// autoplay options go gere
+    		enabled: false,
+			delay: 5000,
+    		pauseOnHover: false,
+			stopAtAction: false
+    	},
+		transitionType:'move',
+		globalCaption: false,
+		deeplinking: {
+			enabled: true,
+			change: false
+		},
+		slidesSpacing:10,
+		addActiveClass: true
+	});	
+		
+		
+	}
+	
+	
+	
+	
+		
+		
+		  
+		  var slider = $(".royalSlider").data('royalSlider');
+	
+	
+	
+	//slider.slides[0].holder.on('rsAfterContentSet', function() {
+	slider.ev.on('rsAfterContentSet', function() {
+		show_full(slider.currSlideId);
+	});
+	
+	slider.ev.on('rsAfterSlideChange', function(event) {
+		show_full(slider.currSlideId);
+	});	
+	
+	slider.ev.on('rsDragRelease', function() {
+		show_full(slider.currSlideId);
+	});
+		
+	
+	
+	function show_full(id) {
+		var items = [];
+		  $('.rsThumbsContainer').find('img').each(function() {
+			items.push( {
+			  src: $(this).attr('src'),
+			  title: $(this).attr('alt')
+			} );
+		  });
+		
+		$('.rsActiveSlide').on("click","img", function (e) {
+				
+		  $.magnificPopup.open({
+			items : items,
+			type: 'image',
+			gallery:{enabled:true},	
+			});
+			$.magnificPopup.instance.goTo(id);
+		});
+	}
+});
+
 
 </script>
-<script src="js/script.js"></script>
 <script type="text/javascript" src="js/jquery.isotope.js"></script>
 
 </body>
