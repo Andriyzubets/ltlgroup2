@@ -122,8 +122,19 @@
 				<li>
 					<a href="#" class="portfolio-selected" data-filter="*">Все</a>
 				</li>
+				<!-- <label for="vid">Виды отделки</label>
+				<select name="vid" id="first">
+					<option value="*">Все</option>
+					<option value=".code">Прозрачная</option>
+					<option value=".design">Пигментированная</option>
+				</select>
+				<select id="second" >
+					<option value=".audio">Отделка 3</option>
+					<option value=".video">Отделка 4</option>
+				</select> -->
+
 				<li>
-					<a href="#" class="" data-filter=".code">Отделка 1</a>
+					<a href="#" class="" id="fff" data-filter=".code" >Отделка 1</a>
 				</li>
 				<li>
 					<a href="#" class="" data-filter=".design">Отделка 2</a>
@@ -419,7 +430,15 @@ $(window).load(function() {
     });
 
 });
+
+// var a = document.querySelector('.portfolio-filter-container select').value;
+// function firstChange(id) {
+// 	document.getElementById(id).setAttribute('data-filter', a);
+// 	alert(a);
+// }
+
 </script>
+<script src="js/script.js"></script>
 <script type="text/javascript" src="js/jquery.isotope.js"></script>
 
 </body>

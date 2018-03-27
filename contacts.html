@@ -227,6 +227,49 @@
 					</div>
 				</div>
 			</section>
+			<div class="adresses">
+				<div class="item">
+					<ul>
+						<li>г. Днепропетровск</li>
+						<li>ул. Романа Шухевича, 68</li>
+						<li><a href="tel:0954747307">тел (095) 47-47-307</a></li>
+						<li><a href="tel:0973805311">тел. (097) 380-53-11</a></li>
+						<li><a href="tel:0974128334">тел. (097) 412-83-34</a></li>
+					</ul>
+				</div>
+				<div class="item">
+					<ul>
+						<li>г. Харьков</li>
+						<li>Сабуровская набережная, 5</li>
+						<li><a href="tel:0672331639">тел. (067) 233-16-39</a></li>
+						<li><a href="tel:0577325633">тел./факс (057) 732-56-33</a></li>
+					</ul>
+				</div>
+				<div class="item">
+					<ul>
+						<li>г. Полтава</li>
+						<li>ул. Маршала Бирюзова, 47Б</li>
+						<li><a href="tel:0675689626">тел. (067) 568-96-26</a></li>
+						<li><a href="te:0666738030">тел. (066) 673-80-30</a></li>
+					</ul>
+				</div>
+				<div class="item">
+					<ul>
+						<li>г. Черкассы</li>
+						<li>ул. Луценко, 7</li>
+						<li><a href="tel:0674057521">тел. (067) 405-75-21</a></li>
+						<li><a href="tel:0472634918">тел./факс (0472) 63-49-18</a></li>
+					</ul>
+				</div>
+				<div class="item">
+					<ul>
+						<li>г. Запорожье</li>
+						<li>ул. Украинская 143</li>
+						<li><a href="tel:0687147474">тел. (068) 714-74-74</a></li>
+						<li><a href="tel:0668698101">тел. (066) 869-81-01</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</section>
 	<section class="separator">
@@ -489,7 +532,7 @@ window.addEventListener('scroll', function() {
 	height = scroll > 335 ? scroll - 335 : 0;
 	position = scroll > 150 ? 100 - Math.floor(scroll/800*100) : 70;
 	position1 = scroll > 755 ? 100 - Math.floor(scroll/1600*100) : 55;
-	pointOne = scroll > Math.floor(document.querySelector('.left .pointer').getBoundingClientRect().top+scrollTop+110) ? pointerOne.style.background='#ee4b41' : pointerOne.style.background='#f1efef';
+	pointOne = scroll > Math.floor(document.querySelector('.left .pointer').getBoundingClientRect().top+scrollTop+80) ? pointerOne.style.background='#ee4b41' : pointerOne.style.background='#f1efef';
 	pointTwo = scroll > Math.floor(document.querySelector('.right .pointer').getBoundingClientRect().top+scrollTop + 450) ? pointerTwo.style.background='#ee4b41' : pointerTwo.style.background='#f1efef';
 
 

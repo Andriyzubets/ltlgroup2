@@ -1483,49 +1483,49 @@ ul.grid li:first-child a {
 	background-position: 0 0;
 }
 .portfolio-filter-down a {
-	    text-decoration: none;
-    outline: none;
-    display: inline-block;
-    padding: 5px 20px;
-    margin: 0 5px;
-    position: relative;
-    color: #474038;
-    border: 1px solid #ccc;
-    background: none;
-    font-weight: 300;
-    /* font-family: 'Montserrat', sans-serif; */
-    /* text-transform: uppercase; */
-    letter-spacing: 2px;
+	text-decoration: none;
+	outline: none;
+	display: inline-block;
+	padding: 5px 20px;
+	margin: 0 5px;
+	position: relative;
+	color: #474038;
+	border: 1px solid #ccc;
+	background: none;
+	font-weight: 300;
+	/* font-family: 'Montserrat', sans-serif; */
+	/* text-transform: uppercase; */
+	letter-spacing: 2px;
 }
 .portfolio-filter-down a:before,
 .portfolio-filter-down a:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  opacity: 0;
-  box-sizing: border-box;
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+	box-sizing: border-box;
 }
 .portfolio-filter-down a:before {
-  bottom: 0;
-  left: 0;
-  border-left: 1px solid #474038;
-  border-top: 1px solid #474038;
-  transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+	bottom: 0;
+	left: 0;
+	border-left: 1px solid #474038;
+	border-top: 1px solid #474038;
+	transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
 }
 
 .portfolio-filter-down a:after {
-  top: 0;
-  right: 0;
-  border-right: 1px solid #474038;
-  border-bottom: 1px solid #474038;
-  transition: 0s ease opacity .4s, .2s ease width , .2s ease height .2s;
+	top: 0;
+	right: 0;
+	border-right: 1px solid #474038;
+	border-bottom: 1px solid #474038;
+	transition: 0s ease opacity .4s, .2s ease width , .2s ease height .2s;
 }
 .portfolio-filter-down a:hover:before,
 .portfolio-filter-down a:hover:after, .portfolio-filter-down a.portfolio-selected:after, .portfolio-filter-down a.portfolio-selected:before {
-  height: 100%;
-  width: 100%;
-  opacity: 1;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
 }
 .portfolio-filter-down a:hover:before {transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;}
 .portfolio-filter-down a:hover:after {transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s;}
@@ -1691,11 +1691,10 @@ ul.grid li:first-child a {
 .about-contacts .left .pointer {
 	position: absolute;
 	width: 10px;
-	height: 10px;
+	height: 3px;
 	background: #f1efef;
-	right: -6px;
+	right: 0px;
 	top: 23%;
-	border-radius: 50%;
 	-webkit-transition: all .4s linear;
 	-o-transition: all .4s linear;
 	transition: all .4s linear;
@@ -1703,11 +1702,10 @@ ul.grid li:first-child a {
 .about-contacts .right .pointer {
 	position: absolute;
 	width: 10px;
-	height: 10px;
+	height: 3px;
 	background: #f1efef;
-	left: -5px;
+	left: 0px;
 	top: 19.5%;
-	border-radius: 50%;
 	-webkit-transition: all .4s linear;
 	-o-transition: all .4s linear;
 	transition: all .4s linear;
@@ -1726,7 +1724,7 @@ ul.grid li:first-child a {
 	margin-top: 200px;
 }
 .left .container-adress {
-	margin-top: 420px;
+	margin-top: 550px;
 	box-shadow: 0 0 19px #000;
 }
 .left .container-adress .header-contacts {
@@ -1794,4 +1792,34 @@ ul.grid li:first-child a {
 .left .container-adress .social .goo {
 	background: url(../img/google_plus-black.png) 50% no-repeat;
 	
+}
+.about-contacts .right .adresses {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	width: 80%;
+	margin: 0 auto;
+	padding: 110px 0 0;
+}
+.about-contacts .right .adresses .item {
+	width: 45%;
+	margin: 0 0 40px;
+}
+.about-contacts .right .adresses .item li:first-child {
+	font-size: 18px;
+	font-weight: 700;
+	margin: 0 0 15px;
+
+}
+.about-contacts .right .adresses .item li {
+	font-size: 14px;
+	margin: 0 0 5px;
 }
