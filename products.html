@@ -115,7 +115,7 @@
 	<section class="products-container">
 		<div class="nav">
 			<!-- 1 -->
-			<a href="" onclick="heightBox('ilva');return false;">Лакокрасочные материалы
+			<a href="" id="ilvaTab" onclick="heightBox('ilva');closeBox('anest');closeBox('dikema');closeBox('indasa');return false;">Лакокрасочные материалы
 				<span>ILVA Polimeri (Италия)</span>
 			</a>
 			<ul id="ilva">
@@ -134,7 +134,7 @@
 			</ul>
 			<!-- 2 --> 
 
-			<a href="" onclick="heightBox('anest');return false;">Покрасочное оборудование
+			<a href="" id="anestTab" onclick="heightBox('anest');closeBox('ilva');closeBox('dikema');closeBox('indasa');return false;">Покрасочное оборудование
 				<span>Anest Iwata (Япония)</span>
 			</a> 
 
@@ -152,7 +152,7 @@
 				<li>Материалы на основе нитроцеллюлозы</li>
 				<li>Другие материалы</li>
 			</ul>
-			<a href="" onclick="heightBox('dikema');return false;">Клея для дерева
+			<a href="" id="dikemaTab" onclick="heightBox('dikema');closeBox('anest');closeBox('ilva');closeBox('indasa');return false;">Клея для дерева
 				<span>Dikema (Италия)</span>
 			</a>
 			<ul id="dikema" style="max-height: 0px;">
@@ -170,7 +170,7 @@
 				<li>Другие материалы</li>
 			</ul> 
 
-			<a href="" onclick="heightBox('indasa');return false;">Шлиф. материалы
+			<a href="" id="indasaTab" onclick="heightBox('indasa');closeBox('anest');closeBox('dikema');closeBox('ilva');return false;">Шлиф. материалы
 				<span>Indasa (Португалия)</span>
 			</a>
 			<ul id="indasa" style="max-height: 0px;">
@@ -387,7 +387,13 @@
 			document.getElementById(id).style.paddingBottom='0px';
 		}
 	}
+	function closeBox(id){
+		height = document.getElementById(id).style.maxHeight;
 
+		document.getElementById(id).style.transition='all .4s linear';
+		document.getElementById(id).style.maxHeight='0px';
+		document.getElementById(id).style.paddingBottom='0px';
+	}
 	function popup(id){
 		display = document.getElementById(id).style.left;
 
