@@ -2091,3 +2091,19 @@ blockquote {
 .products-container .nav ul li:hover:before {
 	width: 30px;
 }
+.products-container .main-content #main-info p {
+	font-size: 18px;
+	text-align: center;
+}
+.products-container .main-content {
+	padding: 0 30px 30px 30px;
+	display: block;
+}
+.products-container .main-content > div {
+	overflow: hidden;
+}
+.products-container .main-content h3 {
+	font-size: 16px;
+	font-weight: 700;
+	margin: 30px 0;
+}
