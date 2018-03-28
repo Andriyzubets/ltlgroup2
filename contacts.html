@@ -234,7 +234,7 @@
 					</div>
 
 					<!-- Dnepr -->
-					<div class="header-contacts" onclick="heightBox('dnepr');closeBox('kiyv');closeBox('kharkov');closeBox('poltava');closeBox('cherkassy');closeBox('zaporozhye');mapBlock('map2');mapHide('map1');mapHide('map3');mapHide('map4');mapHide('map5');mapHide('map6'); return false">
+					<div class="header-contacts dnepr" onclick="">
 						LTL Group в Днепре
 					</div>
 					<div class="main" id="dnepr" style="max-height: 0">
@@ -295,7 +295,7 @@
 						</ul>
 					</div>
 					<!-- Kharkov -->
-					<div class="header-contacts" onclick="heightBox('kharkov');closeBox('kiyv');closeBox('dnepr');closeBox('poltava');closeBox('cherkassy');closeBox('zaporozhye');mapBlock('map3');mapHide('map1');mapHide('map2');mapHide('map4');mapHide('map5');mapHide('map6');return false">
+					<div class="header-contacts kharkov">
 						LTL Group в Харькове
 					</div>
 					<div class="main" id="kharkov" style="max-height: 0">
@@ -354,7 +354,7 @@
 					</div>
 
 					<!-- poltava -->
-					<div class="header-contacts" onclick="heightBox('poltava');closeBox('kiyv');closeBox('dnepr');closeBox('kharkov');closeBox('cherkassy');closeBox('zaporozhye');mapBlock('map4');mapHide('map1');mapHide('map2');mapHide('map3');mapHide('map5');mapHide('map6');return false">
+					<div class="header-contacts poltava">
 						LTL Group в Полтаве
 					</div>
 					<div class="main" id="poltava" style="max-height: 0">
@@ -413,7 +413,7 @@
 					</div>
 
 					<!-- cherkassy -->
-					<div class="header-contacts" onclick="heightBox('cherkassy');closeBox('kiyv');closeBox('dnepr');closeBox('kharkov');closeBox('poltava');closeBox('zaporozhye');mapBlock('map5');mapHide('map1');mapHide('map2');mapHide('map4');mapHide('map3');mapHide('map6');return false">
+					<div class="header-contacts cherkassy">
 						LTL Group в Черкассах
 					</div>
 					<div class="main" id="cherkassy" style="max-height: 0">
@@ -472,7 +472,7 @@
 					</div>
 
 					<!-- zaporozhye -->
-					<div class="header-contacts" onclick="heightBox('zaporozhye');closeBox('kiyv');closeBox('dnepr');closeBox('kharkov');closeBox('poltava');closeBox('cherkassy');mapBlock('map6');mapHide('map1');mapHide('map2');mapHide('map4');mapHide('map5');mapHide('map3');return false">
+					<div class="header-contacts zaporozhye">
 						LTL Group в Запорожье
 					</div>
 					<div class="main" id="zaporozhye" style="max-height: 0">
@@ -532,11 +532,11 @@
 				</div>
 				<div class="right-wrap">
 					<div id="map1" class="map"></div>
-					<div id="map2" class="map" style="max-height: 0px;"></div>
-					<div id="map3" class="map" style="max-height: 0px;"></div>
-					<div id="map4" class="map" style="max-height: 0px;"></div>
-					<div id="map5" class="map" style="max-height: 0px;"></div>
-					<div id="map6" class="map" style="max-height: 0px;"></div>
+					<div id="map2" class="map map2" style="max-height: 0px;"></div>
+					<div id="map3" class="map map3" style="max-height: 0px;"></div>
+					<div id="map4" class="map map4" style="max-height: 0px;"></div>
+					<div id="map5" class="map map5" style="max-height: 0px;"></div>
+					<div id="map6" class="map map6" style="max-height: 0px;"></div>
 				</div>
 				
 			</div>
@@ -814,10 +814,121 @@ window.addEventListener('scroll', function() {
 	// console.log(scroll);
 
 });
+
+// Высоты
 var lh = document.querySelector('.about-contacts .contacts-wrapper');
 var height = window.getComputedStyle(lh, null).height;
 document.querySelector('.double .line').style.maxHeight=height;
+// карты
+var cont1 = parseInt(window.getComputedStyle(document.querySelector('.about-contacts #kiyv'), null).height);
+var cont11 = cont1 + 56;
+document.querySelector('.about-contacts .double .map').style.height=cont11+'px';
+document.querySelector('.about-contacts .dnepr').onclick = function() {
+	heightBox('dnepr');
+	closeBox('kiyv');
+	closeBox('kharkov');
+	closeBox('poltava');
+	closeBox('cherkassy');
+	closeBox('zaporozhye');
+	mapBlock('map2');
+	mapHide('map1');
+	mapHide('map3');
+	mapHide('map4');
+	mapHide('map5');
+	mapHide('map6');
+	setTimeout(mapFunc2,400);
+}
+function mapFunc2() {
+	var cont2 = parseInt(window.getComputedStyle(document.querySelector('.about-contacts #dnepr'), null).height);
+	var cont22 = cont2 + 56;
+	document.querySelector('.about-contacts .double .map2').style.height=cont22+'px';
+};
 
+document.querySelector('.about-contacts .kharkov').onclick = function() {
+	heightBox('kharkov');
+	closeBox('kiyv');
+	closeBox('dnepr');
+	closeBox('poltava');
+	closeBox('cherkassy');
+	closeBox('zaporozhye');
+	mapBlock('map3');
+	mapHide('map1');
+	mapHide('map2');
+	mapHide('map4');
+	mapHide('map5');
+	mapHide('map6');
+	setTimeout(mapFunc3,400);
+}
+function mapFunc3() {
+	var cont2 = parseInt(window.getComputedStyle(document.querySelector('.about-contacts #kharkov'), null).height);
+	var cont22 = cont2 + 56;
+	document.querySelector('.about-contacts .double .map3').style.height=cont22+'px';
+};
+
+document.querySelector('.about-contacts .poltava').onclick = function() {
+	heightBox('poltava');
+	closeBox('kiyv');
+	closeBox('dnepr');
+	closeBox('kharkov');
+	closeBox('cherkassy');
+	closeBox('zaporozhye');
+	mapBlock('map4');
+	mapHide('map1');
+	mapHide('map2');
+	mapHide('map3');
+	mapHide('map5');
+	mapHide('map6');
+	setTimeout(mapFunc4,400);
+}
+function mapFunc4() {
+	var cont2 = parseInt(window.getComputedStyle(document.querySelector('.about-contacts #poltava'), null).height);
+	var cont22 = cont2 + 56;
+	document.querySelector('.about-contacts .double .map4').style.height=cont22+'px';
+};
+
+
+document.querySelector('.about-contacts .cherkassy').onclick = function() {
+	heightBox('cherkassy');
+	closeBox('kiyv');
+	closeBox('dnepr');
+	closeBox('poltava');
+	closeBox('kharkov');
+	closeBox('zaporozhye');
+	mapBlock('map5');
+	mapHide('map1');
+	mapHide('map2');
+	mapHide('map4');
+	mapHide('map3');
+	mapHide('map6');
+	setTimeout(mapFunc5,400);
+}
+function mapFunc5() {
+	var cont2 = parseInt(window.getComputedStyle(document.querySelector('.about-contacts #cherkassy'), null).height);
+	var cont22 = cont2 + 56;
+	document.querySelector('.about-contacts .double .map5').style.height=cont22+'px';
+};
+
+document.querySelector('.about-contacts .zaporozhye').onclick = function() {
+	heightBox('zaporozhye');
+	closeBox('kiyv');
+	closeBox('dnepr');
+	closeBox('poltava');
+	closeBox('cherkassy');
+	closeBox('kharkov');
+	mapBlock('map6');
+	mapHide('map1');
+	mapHide('map2');
+	mapHide('map4');
+	mapHide('map5');
+	mapHide('map3');
+	setTimeout(mapFunc6,400);
+}
+function mapFunc6() {
+	var cont2 = parseInt(window.getComputedStyle(document.querySelector('.about-contacts #zaporozhye'), null).height);
+	var cont22 = cont2 + 56;
+	document.querySelector('.about-contacts .double .map6').style.height=cont22+'px';
+};
+// Закрытие блоков
 function closeBox(id){
 	height = document.getElementById(id).style.maxHeight;
 

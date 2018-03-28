@@ -1852,11 +1852,25 @@ ul.grid li:first-child a {
 	padding-bottom: 0 !important;
 }
 .about-contacts .double .map {
-	width: 80%;
-	/*height: 90%;*/
-	margin: 56px auto 0;
+	width: calc(100% - 2px);
+	margin: 0 0 0 2px;
 	overflow: hidden;
 	transition: all .4s;
+}
+.about-contacts .double .map2 {
+	margin: 56px 0 0 2px;
+}
+.about-contacts .double .map3 {
+	margin: 56px 0 0 2px;
+}
+.about-contacts .double .map4 {
+	margin: 56px 0 0 2px;
+}
+.about-contacts .double .map5 {
+	margin: 56px 0 0 2px;
+}
+.about-contacts .double .map6 {
+	margin: 56px 0 0 2px;
 }
 /* end new */
 .about-contacts .left {
