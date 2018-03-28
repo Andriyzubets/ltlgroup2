@@ -1767,19 +1767,21 @@ ul.grid li:first-child a {
 }
 .about-contacts .double .left-wrap.container-adress {
 	/*margin-top: 550px;*/
-	box-shadow: 0 0 19px #000;
+	box-shadow: 0 0 10px #000;
 	padding: 0;
 	width: 40%;
 }
 .about-contacts .double .left-wrap.container-adress .header-contacts {
 	width: calc(100% + 1px);
-	line-height: 4em;
+	line-height: 3em;
 	background: #474038d9;
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 18px;
 	color: #fff;
 	position: relative;
+	cursor: pointer;
+	border-bottom: 2px solid #fff;
 }
 .about-contacts .double .left-wrap.container-adress .header-contacts:after {
 	content: "";
@@ -1792,9 +1794,13 @@ ul.grid li:first-child a {
 	margin: 0 auto;
 	padding: 30px 0;
 	font-size: 14px;
+	text-align: left;
 }
 .about-contacts .double .left-wrap.container-adress .contact-list:first-child {
 	padding-top: 0;
+}
+.about-contacts .double .left-wrap.container-adress .contact-list li span{
+	display: block;
 }
 .about-contacts .double .left-wrap.container-adress .contact-list li span:first-child {
 	text-transform: uppercase;
@@ -1836,6 +1842,16 @@ ul.grid li:first-child a {
 .about-contacts .double .left-wrap.container-adress .social .goo {
 	background: url(../img/google_plus-black.png) 50% no-repeat;
 	
+}
+.about-contacts .double .left-wrap.container-adress .main {
+	overflow: hidden;
+	transition: all .4s;
+	padding-bottom: 0 !important;
+}
+.about-contacts .double .map {
+	width: 80%;
+	height: 90%;
+	margin: 3% auto 0;
 }
 /* end new */
 .about-contacts .left {
