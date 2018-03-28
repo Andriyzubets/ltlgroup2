@@ -1663,6 +1663,7 @@ ul.grid li:first-child a {
 	-ms-flex-wrap: wrap;
 	-o-flex-wrap: wrap;
 	flex-wrap: wrap;
+	margin: 0 0 50px;
 }
 
 .about-contacts .central {
