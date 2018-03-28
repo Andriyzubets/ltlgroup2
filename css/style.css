@@ -1690,7 +1690,7 @@ ul.grid li:first-child a {
 	font-size: 12px;
 	left: calc(40% - 62px);
 	line-height: 1em;
-	bottom: 60px;
+	bottom: 80px;
 	transition: all .6s ease-in-out;
 	background: linear-gradient(to right, #525252, lightgray, #5f5f5f);
 	color: transparent;
@@ -2278,4 +2278,215 @@ blockquote {
 	font-size: 16px;
 	font-weight: 700;
 	margin: 30px 0;
+}
+
+	/* STYLE PRICE-BOX */
+.price-box {
+	padding-top: 150px;
+}
+.price-box h1 {
+	text-transform: uppercase;
+	font-size: 37px;
+	color: #ee4b41;
+	margin: 0 auto;
+	font-weight: bold;
+	padding: 0 0 30px 0;
+}
+.price-box p {
+	font-size: 18px;
+	color: #484037;
+	padding: 30px 20px;
+}
+.price-header {
+	text-align: center;
+	margin: 0 0 40px 0;
+}
+.brown {
+	color: #484037;
+}
+.price-item {
+	border: 2px solid #484037;
+	width: 75%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+}
+.price-text {
+	width: 50%;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+.price-button {
+	background: #ee4b41;
+	color: #fff;
+	text-align: center;
+	padding: 8px 10px;
+	border-radius: 5px;
+	font-size: 14px;
+	box-shadow: 0 0 10px #ccc;
+	cursor: pointer;
+	width: 40%;
+	margin-bottom: 20px;
+}
+.price-button:hover {
+	transition: all .4s;
+    background: #fff;
+    color: #ee4b41;
+    transform: scale(1.05);
+    box-shadow: 0 0 5px #000;
+}
+
+.list-box-header {
+	text-align: center;
+}
+.list-box-header .list-box-title {
+	text-transform: uppercase;
+    font-size: 37px;
+    color: #ee4b41;
+    margin: 0 auto;
+    font-weight: bold;
+    padding: 100px 0 30px 0;
+}
+.price-black-box {
+	display: flex;
+	flex-flow: row-reverse;
+	background: #ccc;
+	padding: 80px 200px;
+	position: relative;
+	margin-bottom: 50px;
+}
+.price-black-box .box-right {
+	width: 75%;
+	filter: drop-shadow(0px 0px 10px #ffffff78);
+	transform: scale(1.2);
+}
+.box-left {
+	width: 100%;
+	margin-right: 50px;
+	z-index: 1;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+.box-left a {
+	margin-top: 20px;
+}
+.box-left p {
+	color: #fff;
+	text-shadow: 0px 0px 10px #000;
+	line-height: 1.3em;
+	padding: 0 60px 0 0;
+}
+.bold {
+	font-weight: bold;
+}
+.price-img {
+	background: url(../img/price-wood.jpg) 50% no-repeat;
+	background-size: contain;
+	width: 30%;
+	transform: scale(1.2);
+	filter: drop-shadow(3px -3px 4px #000);
+}
+.price-list-box {
+	margin-top: 40px;
+}
+.box-right {
+	background: url(../img/price-box.jpg) 50% no-repeat;
+	background-size: contain;
+	z-index: 1;
+}
+.price-black-box .box-layer {
+	filter: brightness(30%);
+	background: url(../img/price-bg.jpg);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+	/* BLOCK 2 */
+.price-img-2 {
+	background: url(../img/price-1.jpg) 50% no-repeat;
+	background-size: contain;
+	width: 30%;
+	transform: scale(1.2);
+	filter: drop-shadow(3px -3px 4px #000);
+}
+.box-right-2 {
+	background: url(../img/price-2.jpg) 50% no-repeat;
+	background-size: contain;
+	z-index: 1;
+}
+.price-black-box .box-layer-2 {
+	filter: brightness(30%);
+	background: url(../img/price-bg.jpg);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+.price-black-box .box-right-2 {
+	width: 75%;
+	filter: drop-shadow(0px 0px 10px #ffffff78);
+	transform: scale(1.2);
+}
+/* BLOCK 3 */
+.price-img-3 {
+	background: url(../img/price-3.jpg) 50% no-repeat;
+	background-size: contain;
+	width: 30%;
+	transform: scale(1.2);
+	filter: drop-shadow(3px -3px 4px #000);
+}
+.box-right-3 {
+	background: url(../img/price-4.jpg) 50% no-repeat;
+	background-size: contain;
+	z-index: 1;
+}
+.price-black-box .box-layer-3 {
+	filter: brightness(30%);
+	background: url(../img/price-bg.jpg);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+.price-black-box .box-right-3 {
+	width: 75%;
+	filter: drop-shadow(0px 0px 10px#ffffff78);
+	transform: scale(1.2);
+}
+/* BLOCK 4 */
+.price-img-4 {
+	background: url(../img/price-5.jpg) 50% no-repeat;
+	background-size: contain;
+	width: 30%;
+	transform: scale(1.2);
+	filter: drop-shadow(3px -3px 4px #000);
+}
+.box-right-4 {
+	background: url(../img/price-6.jpg) 50% no-repeat;
+	background-size: contain;
+	z-index: 1;
+}
+.price-black-box .box-layer-4 {
+	filter: brightness(30%);
+	background: url(../img/price-bg.jpg);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+.price-black-box .box-right-4 {
+	width: 75%;
+	filter: drop-shadow(0px 0px 10px #ffffff78);
+	transform: scale(1.2);
 }
