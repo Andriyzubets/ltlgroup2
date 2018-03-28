@@ -972,7 +972,7 @@ On click the images will be displayed at normal size to complete the effect
 	border-bottom: .5px solid #ccc;
 }
 .why {
-	padding: 30px 0;
+	padding: 200px 0 30px;
 	position: relative;
 }
 .benefit .wrap {
@@ -1727,7 +1727,6 @@ ul.grid li:first-child a {
 	position: absolute;
 	left: -1.7px;
 	top: 0;
-	z-index: 1;
 	transition: height .2s linear;
 }
 .about-contacts .left-wrap .pointer {
@@ -1747,7 +1746,7 @@ ul.grid li:first-child a {
 	height: 3px;
 	background: #f1efef;
 	left: 0px;
-	top: 4.5%;
+	top: 19.5%;
 	-webkit-transition: all .4s linear;
 	-o-transition: all .4s linear;
 	transition: all .4s linear;
@@ -1762,7 +1761,7 @@ ul.grid li:first-child a {
 }
 .about-contacts .double .img-left-1 {
 	width: 80%;
-	transform: translate(15%, 70%);
+	transform: translate(15%, 120%);
 	margin-top: 200px;
 }
 .about-contacts .double .left-wrap.container-adress {
@@ -1838,136 +1837,7 @@ ul.grid li:first-child a {
 	
 }
 /* end new */
-.about-contacts .left {
-	width: 40%;
-	position: relative;
-	border-right: 1px solid #f1efef;
-}
-.about-contacts .right {
-	width: calc(60% - 1px);
-	position: relative;
 
-}
-.about-contacts .right .line {
-	width: 2px;
-	background: #ee4b41;
-	position: absolute;
-	left: -1.7px;
-	transition: height .2s linear;
-}
-.about-contacts .left .wrap {
-	padding: 90px 30px;
-	margin: 0 auto;
-	letter-spacing: 2px;
-	font-size: 12px;
-	text-align: right;
-	position: relative;
-}
-.about-contacts .left .pointer {
-	position: absolute;
-	width: 10px;
-	height: 3px;
-	background: #f1efef;
-	right: 0px;
-	top: 23%;
-	-webkit-transition: all .4s linear;
-	-o-transition: all .4s linear;
-	transition: all .4s linear;
-}
-.about-contacts .right .pointer {
-	position: absolute;
-	width: 10px;
-	height: 3px;
-	background: #f1efef;
-	left: 0px;
-	top: 19.5%;
-	-webkit-transition: all .4s linear;
-	-o-transition: all .4s linear;
-	transition: all .4s linear;
-}
-.about-contacts .left .wrap p:first-child {
-	font-size: 24px;
-	font-weight: 700;
-}
-.about-contacts .right .img-right-1 {
-	width: 80%;
-	transform: translate(15%, 70%);
-}
-.about-contacts .left .img-left-1 {
-	width: 80%;
-	transform: translate(15%, 120%);
-	margin-top: 200px;
-}
-.left .container-adress {
-	margin-top: 550px;
-	box-shadow: 0 0 19px #000;
-}
-.left .container-adress .header-contacts {
-	width: 100%;
-	line-height: 4em;
-	background: #474038d9;
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 18px;
-	color: #fff;
-	position: relative;
-}
-.left .container-adress .header-contacts:after {
-	content: "";
-	width: 100%;
-	height: 100%;
-
-}
-.left .container-adress .contact-list {
-	width: 60%;
-	margin: 0 auto;
-	padding: 30px 0;
-	font-size: 14px;
-}
-.left .container-adress .contact-list:first-child {
-	padding-top: 0;
-}
-.left .container-adress .contact-list li span:first-child {
-	text-transform: uppercase;
-	font-size: 16px;
-	font-weight: 700;
-	letter-spacing: 3px;
-	margin: 30px 0 5px;
-	display: block;
-}
-.left .container-adress .social {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-
-	-ms-align-items: center;
-	align-items: center;
-}
-.left .container-adress .social a {
-	display: block;
-	width: 30px;
-	height: 30px;
-	background: #ccc;
-	margin-right: 15px;
-}
-.left .container-adress .social .fb {
-	background: url(../img/facebook-logo_black.png) 50% no-repeat;
-
-}
-.left .container-adress  .social .ins {
-	background: url(../img/instagram_logo-black.png) 50% no-repeat;
-	
-}
-.left .container-adress  .social .tele {
-	background: url(../img/telegram-black.png) 50% no-repeat;
-	
-}
-.left .container-adress .social .goo {
-	background: url(../img/google_plus-black.png) 50% no-repeat;
-	
-}
 .about-contacts .right .adresses {
 	display: -webkit-flex;
 	display: -moz-flex;
