@@ -1851,8 +1851,8 @@ ul.grid li:first-child a {
 }
 .about-contacts .double .map {
 	width: 80%;
-	height: 90%;
-	margin: 0 auto 0;
+	/*height: 90%;*/
+	margin: 56px auto 0;
 	overflow: hidden;
 	transition: all .4s;
 }
