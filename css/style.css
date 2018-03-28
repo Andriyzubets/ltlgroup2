@@ -171,14 +171,14 @@ a {
 	z-index: -1;
 }
 .header .login {
-	width: 50px;
+
 	margin: 0 20px;
-	padding: 5px 10px;
+	padding: 5px 20px;
 	background: #ee4b41;
 	color: #fff;
 	text-align: center;
 	border-radius: 5px;
-	font-size: 10px;
+	font-size: 12px;
 	box-shadow: 0 0 10px #ccc;
 	cursor: pointer;
 /*	-ms-align-self: flex-end;
@@ -189,7 +189,7 @@ align-self: flex-end;*/
 	background: #fff;
 	color: #ee4b41;
 	transform: scale(1.05);
-	box-shadow: 0 0 5px #000;
+	box-shadow: 0 0 8px #aba8a8;
 }
 .main-header {
 	display: -webkit-flex;
@@ -660,8 +660,11 @@ h1 {
 	-webkit-background-size: 100%;
 	background-size: 100%;
 }
-.complex .item:hover {
-
+.complex .item:hover .img-bg {
+	filter: drop-shadow(0 0 5px #000);
+}
+.complex .item:hover .info-text span, .complex .item:hover .rotate-text {
+	color: #ee4b41;
 }
 .complex .item:hover:after {
 	opacity: .6;
@@ -1278,14 +1281,13 @@ On click the images will be displayed at normal size to complete the effect
 	min-height: 50px;
 }
 .footer-form .def-button {
-	width: 150px;
-
-	padding: 8px 10px;
+	width: 180px;
+	padding: 8px 20px;
 	background: #ee4b41;
 	color: #fff;
 	text-align: center;
 	border-radius: 5px;
-	font-size: 10px;
+	font-size: 12px;
 	box-shadow: 0 0 10px #ccc;
 	cursor: pointer;
 }
@@ -1294,7 +1296,7 @@ On click the images will be displayed at normal size to complete the effect
 	background: #fff;
 	color: #ee4b41;
 	transform: scale(1.05);
-	box-shadow: 0 0 5px #000;
+	box-shadow: 0 0 8px #aba8a8;
 }
 
 :focus::-webkit-input-placeholder {color: transparent}
@@ -1651,7 +1653,7 @@ ul.grid li:first-child a {
 ********** contacts page ***********
 *******************************/
 .about-contacts {
-	padding: 30px 0 0;
+	padding: 30px 0 50px;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -1663,7 +1665,7 @@ ul.grid li:first-child a {
 	-ms-flex-wrap: wrap;
 	-o-flex-wrap: wrap;
 	flex-wrap: wrap;
-	margin: 0 0 50px;
+	/*margin: 0 0 50px;*/
 }
 
 .about-contacts .central {
@@ -2156,7 +2158,8 @@ blockquote {
 	align-self: flex-start;
 }
 .gallery-container .item:hover {
-	filter: drop-shadow(0 0 15px #ccc);
+	filter: drop-shadow(-2px 3px 8px #ccc);
+	transform: scale(1.02);
 }
 .gallery-content-container #gallery-1 {
 	width: 80%;
